@@ -1,0 +1,10 @@
+{
+  "name": "Roshani Kumari — Full Stack Developer & DevOps Enthusiast",
+  "short_name": "Roshani Kumari",
+  "description": "Portfolio of Roshani Kumari, a full stack developer and CSE student skilled in React, Node.js, Docker and CI/CD.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#221b3d",
+  "theme_color": "#221b3d",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
