@@ -215,6 +215,22 @@ The project can be deployed as a static Vite site after running `pnpm build`. If
 
 For a static deployment, configure the host to serve `index.html` for unknown routes. The current portfolio uses hash-free client-side sections and does not require a database for the frontend-only experience.
 
+### GitHub Pages
+
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml`. It automatically builds and deploys the frontend whenever changes are pushed to `main`.
+
+To enable it in the repository:
+
+1. Open **Settings > Pages** on GitHub.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Push to `main` or run the **Deploy portfolio to GitHub Pages** workflow manually from the **Actions** tab.
+
+After the first successful workflow run, the public site will be available at:
+
+<https://roshaniraj24.github.io/Portfolio/>
+
+GitHub Pages hosts the frontend only. The optional FastAPI backend is not deployed by this workflow and requires a separate Python-capable hosting service.
+
 ## License
 
 No license has been specified yet. Contact the repository owner before reusing the design, code, images, or portfolio content in another project.
